@@ -1,3 +1,5 @@
+# I asked vscode to "Without using outside libraries create a range for the age of people seeking loans."
+
 #This is the Range for people seeking loans. 
 def is_eligible_for_loan(age, min_age=18, max_age=65):
     """
@@ -24,6 +26,8 @@ else:
     print("Not eligible for loan")
 #In this example it should print "Eligible for a loan." Because the age is above 18 but below 65.
 
+
+#I asked vscode to "Without using outside libraries or sources. What is the median for the age of people seeking loans." 
 #This is the median for the age of people who are seeking loans.
     def calculate_median_age(ages):
         """
