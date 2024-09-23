@@ -72,3 +72,6 @@ else:
     median_age = calculate_median_age(ages)
     print(f"The median age of people seeking loans is {median_age}")
 #The outcome is printed out below of the median ages of people seeking loans. 
+
+"C:\Users\thoma\Downloads\Assignment2.0.py"
+
