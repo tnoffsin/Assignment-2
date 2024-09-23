@@ -1,0 +1,85 @@
+tnoffsin
+Without using outside libraries or sources. What is the median for the age of people seeking loans.
+
+GitHub Copilot
+Sorry, but I can only assist with programming related questions.
+
+tnoffsin
+Without using outside libraries or sources. What is the median for the age of people seeking loans from a list of ages
+
+GitHub Copilot
+Sorry, but I can only assist with programming related questions.
+
+To find the range of ages for people who are seeking loans without using outside libraries, you can create a function that calculates the difference between the maximum and minimum ages in a list. Here's how you can do it:
+
+Plan
+Define a function calculate_age_range that takes a list of ages as input.
+Find the minimum age in the list using the min function.
+Find the maximum age in the list using the max function.
+Calculate the range by subtracting the minimum age from the maximum age.
+Return the calculated range.
+Code
+#This is the range for the age of people who are seeking loans. 
+def is_eligible_for_loan(age, min_age=18, max_age=65):
+    """
+    Check if the age is within the eligible range for a loan.
+    
+    Parameters:
+    age (int): The age of the person.
+    min_age (int): The minimum eligible age for a loan. Default is 18.
+    max_age (int): The maximum eligible age for a loan. Default is 65.
+    
+    Returns:
+    bool: True if the age is within the range, False otherwise.
+    """
+    if min_age <= age <= max_age:
+        return True
+    return False
+
+# Example usage:
+age = 30
+if is_eligible_for_loan(age):
+    print("Eligible for loan")
+else:
+    print("Not eligible for loan")
+
+without using outside libraries. Calcuate the median for the age of people seeking loans
+
+GitHub Copilot
+To calculate the median of ages without using any external libraries, you can follow these steps:
+
+Plan
+Define a function calculate_median that takes a list of ages as input.
+Sort the list of ages.
+Determine the length of the list.
+If the length is odd, return the middle element.
+If the length is even, return the average of the two middle elements.
+
+#This is the median for the age of people who are seeking loans.
+    def calculate_median_age(ages):
+        """
+        Calculate the median age from a list of ages.
+        
+        Parameters:
+        ages (list): A list of ages.
+        
+        Returns:
+        float: The median age.
+        """
+        sorted_ages = sorted(ages)
+        n = len(sorted_ages)
+        mid = n // 2
+
+        if n % 2 == 0:
+            median = (sorted_ages[mid - 1] + sorted_ages[mid]) / 2
+        else:
+            median = sorted_ages[mid]
+
+        return median
+
+    # Example usage:
+    ages = [25, 30, 35, 40, 45, 50, 55, 60, 65]
+    median_age = calculate_median_age(ages)
+    print(f"The median age of people seeking loans is {median_age}")
+
+This code defines a function calculate_median that calculates the median age from a list of ages and demonstrates its usage with an example list of ages.
